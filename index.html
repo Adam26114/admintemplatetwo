@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Admin Template Two</title>
+        <title></title>
 
          <!--link fav icon-->
          <link href="./assets/img/fav/favicon.png" type="image/png" size="16x16" />
@@ -25,9 +25,9 @@
         <nav class="navbar navbar-expand-md navbar-light">
             <div id="nav" class="navbar-collapse">
                 <div class="container-fluid">
+
                     <div class="row">
-                    <!--Start Left Sidebar-->
-                    <div class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto sidebars">
+                      <div class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto sidebars">
                         <ul class="navbar-nav flex-column mt-4">
                             <li class="nav-item nav-categories ">Main</li>
                             <li class="nav-item nav-categories"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-lg me-3"></i>Dashboard</a></li>
@@ -118,7 +118,7 @@
     
                             </li>
 
-                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-target="#tableelement" data-bs-toggle="collapse"><i class="fas fa-file-alt fa-lg me-3"></i>Tables<i class="fas fa-angle-left mores"></i></a>
+                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-target="#tablelement" data-bs-toggle="collapse"><i class="fas fa-file-alt fa-lg me-3"></i>Tables<i class="fas fa-angle-left mores"></i></a>
                             
                                 <ul id="tableelement" class="collapse ps-2">
                                     <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"></i>Basic Table</a></li>
@@ -139,36 +139,40 @@
 
                         </ul>
                     </div>
-                    <!--End Left Sidebar-->
+                    
+                    <!--End Left Navbar-->
 
-                    <!--Start Top Sidebar-->
+                    <!-- Start Top Navbar -->
                     <div class="col-lg-10 col-md-9 fixed-top ms-auto topnavbars">
                         <div class="row">
-                            <nav class="navbar navbar-expand navbar-light bg-white shadow">
-                                <!--Seacrh-->
 
-                                <!--Seacrh-->
-                                <form class="me-auto" action="" method="">
+                            <nav class="navbar navbar-expand navbar-light bg-white shadow">
+                                
+                                <!-- Search -->
+                                <form class="me-auto" action="" method="" >
                                     <div class="input-group">
-                                        <input type="text" name="search" id="search" class="form-control border-0 shadow-none" placeholder="Search Something..." />
+                                        <input type="text" name="search" id="search" class="form-control border-0 shadow-none" placeholder="Search something..."/>
                                         <div class="input-group-append">
                                             <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
                                         </div>
                                     </div>
                                 </form>
-                                <!--notify & userlogout-->
-                                <ul class="navbar-nav">
+                               <!-- search -->
+
+                               <!-- notify & userlogout -->
+                                <ul class="navbar-nav me-5 pe-5">
                                     <!-- notify -->
                                     <li class="nav-item dropdowns">
-                                        <a href="javascript:void(0);" class="nav-line dropbtn" onclick="dropbtn(event)">
+
+                                        <a href="javascript:void(0);" class="nav-link dropbtn" onclick="dropbtn(event)">
                                             <i class="fas fa-bell"></i>
                                             <span class="badge bg-danger">5+</span>
                                         </a>
 
                                         <div class="dropdown-contents mydropdowns">
-
                                             <h6>Alert Center</h6>
-                                            <a href="javascript-void(0);" class="d-flex">
+
+                                            <a href="javascript:void(0);" class="d-flex">
                                                 <div>
                                                     <i class="fas fa-file-alt"></i>
                                                 </div>
@@ -178,143 +182,327 @@
                                                 </div>
                                             </a>
 
-                                            <a href="javascript-void(0);" class="d-flex">
-                                                <div>
+                                            <a href="javascript:void(0);" class="d-flex">
+                                                <div class="me-3">
                                                     <i class="fas fa-database text-warning"></i>
                                                 </div>
                                                 <div>
                                                     <p class="small text-muted">3 May 2023</p>
-                                                    <i>Some of your data are missing</i>
+                                                    <i>Some of your data are missing.</i>
                                                 </div>
                                             </a>
 
-                                            <a href="javascript-void(0);" class="d-flex">
+                                            <a href="javascript:void(0);" class="d-flex">
                                                 <div>
-                                                    <i class="fas fa-user"></i>
+                                                    <i class="fas fa-user text-info"></i>
                                                 </div>
                                                 <div>
                                                     <p class="small text-muted">3 May 2023</p>
-                                                    <i>New user are invited you.</i>
+                                                    <i>New users are invited you.</i>
                                                 </div>
                                             </a>
-                                            <a href="javascript:void(0);" class="small text-muted text-center">Show All Notification</a>
 
+                                            <a href="javascript:void(0);" class="small text-muted text-center">Show All Notifications</a>
                                         </div>
+
                                     </li>
                                     <!-- notify -->
 
-                                     <!-- message -->
-                                     <li class="nav-item dropdowns mx-3">
-                                        <a href="javascript:void(0);" class="nav-line dropbtn" onclick="dropbtn(event)">
+                                    <!-- message -->
+                                    <li class="nav-item dropdowns mx-3">
+                                        <a href="javascript:void(0);" class="nav-link dropbtn" onclick="dropbtn(event)">
                                             <i class="fas fa-envelope"></i>
                                         </a>
 
                                         <div class="dropdown-contents mydropdowns">
-
                                             <h6>Message Center</h6>
-                                            <a href="javascript-void(0);" class="d-flex">
+
+                                            <a href="javascript:void(0);" class="d-flex">
                                                 <div class="me-3">
-                                                    <img src="./assets/img/users/user1.jpg" class="rounded-circle" width="20" alt="user1" />
+                                                    <img src="../assets/img/users/user1.jpg" class="rounded-circle" width="30" alt="user1"/>
                                                 </div>
                                                 <div>
-                                                    <p class="small text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                                    </p>
-                                                    <i>Ms.July 25m ago.</i>
+                                                    <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    <i>Ms.July. 25m ago</i>
                                                 </div>
                                             </a>
 
-                                            <a href="javascript-void(0);" class="d-flex">
-                                                <div class="me-3">
-                                                    <img src="./assets/img/users/user2.jpg" class="rounded-circle" width="20" alt="user2" />
+                                            <a href="javascript:void(0);" class="d-flex">
+                                                <div>
+                                                    <img src="../assets/img/users/user2.jpg" class="rounded-circle" width="30" alt="user2"/>
                                                 </div>
                                                 <div>
-                                                    <p class="small text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                                    </p>
-                                                    <i>Mr.Anto 40m ago.</i>
+                                                    <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    <i>Mr.Anton - 40m ago</i>
                                                 </div>
                                             </a>
 
-                                            <a href="javascript-void(0);" class="d-flex">
-                                                <div class="me-3">
-                                                    <img src="./assets/img/users/user3.jpg" class="rounded-circle" width="20" alt="user3" />
+                                            <a href="javascript:void(0);" class="d-flex">
+                                                <div>
+                                                    <img src="../assets/img/users/user3.jpg" class="rounded-circle" width="30" alt="user3"/>
                                                 </div>
                                                 <div>
-                                                    <p class="small text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                                    </p>
-                                                    <i>Ms.PaPa 55m ago.</i>
+                                                    <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    <i>Ms.PaPa - 55m ago</i>
                                                 </div>
                                             </a>
+
                                             <a href="javascript:void(0);" class="small text-muted text-center">Read More Message</a>
-
                                         </div>
+
                                     </li>
                                     <!-- message -->
 
-                                    <!--user logout-->
-                                    <li class="nav-item dropdown me-5 pe-5">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown" ">
-                                           
+                                    <!-- userlogout -->
+                                    <li class="nav-item dropdowns">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown"  >
                                             <span class="text-muted small me-2">Admin</span>
                                             <img src="./assets/img/users/user1.jpg" class="rounded-circle" width="25" />
                                         </a>
                                         <div class="dropdown-menu">
-                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user fa-sm text-muted me-2"></i> Profile</a>
-                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-cogs fa-sm text-muted me-2"></i> Settings</a>
-                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-list fa-sm text-muted me-2"></i> Avtivity Log</a>
+                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user text-sm text-muted me-2"></i>Profile</a>
+                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-cogs text-sm text-muted me-2"></i>Settings</a>
+                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-list text-sm text-muted me-2"></i>Activity Log</a>
                                             <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-sign-out-alt fa-sm text-muted me-2"></i> Logout</a>
+                                            <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-sign-out-alt text-sm text-muted me-2"></i>Logout</a>
+
                                         </div>
                                     </li>
-                                    <!--user logout-->
-
+                                    <!-- userlogout -->
                                 </ul>
-                                <!--notify & userlogout-->
+                                <!-- notify & userlogout -->
                             </nav>
                         </div>
                     </div>
-                    <!--End Top Sidebar-->
+                    <!-- End Top Navbar -->
 
-                    </div>
+                 </div>
 
                 </div>
             </div>
         </nav>
     </div>
     
-   
-    <!--End Left Navbar-->
-    
-    <!--Start Right Navbar-->
+
+
+    <!--Start Content Area-->
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-10 col-md-9">
+                <div class="col-lg-10 col-md-9 ms-auto">
+                     
                     <!-- Start Shortcut Area -->
-                    <div class="row">
+                    <div class="row pt-md-5 mt-md-3">
+                        
                         <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card border-left-primary">
+                            <div class="card shadow py-2 border-left-primarys">
                                 <div class="card-body">
                                     <div class="row align-items-center">
-                                        <div class="col row">
-                                            <h5 >Sales</h5>
+                                        <div class="col"> 
+                                            <h5 class="text-xs fw-bold text-primary text-uppercase mb-1">Sales (Monthly)</h5>
+                                            <p class="h5 text-muted mb-0">$ 50,000</p>     
                                         </div>
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-secondary"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="card shadow py-2 border-left-successes">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col"> 
+                                            <h5 class="text-xs fw-bold text-primary text-uppercase mb-1">Rental Fee (Annual)</h5>
+                                            <p class="h5 text-muted mb-0">$ 400,000</p>     
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-secondary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="card shadow py-2 border-left-infos">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col"> 
+                                            <h5 class="text-xs fw-bold text-primary text-uppercase mb-1">Debt Collect</h5>  
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <p class="h5 text-muted mb-0">60%</p>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-info" style="width:60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-secondary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="card shadow py-2 border-left-warnings">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col"> 
+                                            <h5 class="text-xs fw-bold text-primary text-uppercase mb-1">Request Message</h5>
+                                            <p class="h5 text-muted mb-0">25</p>     
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-secondary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <!-- End Shortcut Area -->
+
+                    <!-- Start Expense Area -->
+                    <div class="row">
+
+                        <div class="col-md-7 mb-3">
+                            <div class="card shadow">
+                                <div class="card-header py-2">
+                                    <h6 class="text-primary">Expenses</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="small">Other Expenses <span>20%</span></h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-danger" style="width:20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small">Sale Tracking <span>40%</span></h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-warning" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small">Rental Fee <span>60%</span></h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-primary" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small">Salary <span>80%</span></h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-info" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small">Furniture <span>20%</span></h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" style="width:100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 mb-3">
+                            <div class="card">
+                                <div class="card-header py-2">
+                                    <h6 class="text-primary">Revenue Sources</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <canvas id="mypiechart">d</canvas>
+                                    </div>
+                                    <div class="small text-center mt-2">
+                                        <span><i class="fas fa-circle text-warning"></i>Return Item</span>
+                                        <span class="mx-2"><i class="fas fa-circle text-primary"></i>Direct Sales</span>
+                                        <span><i class="fas fa-circle text-danger"></i>Online Sales</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Expense Area -->
+
+                    <!-- Start Earning Area -->
+                    <div class="row">
+
+                        <div class="col-lg-8 mb-3">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center py-2">
+                                    <h6>Earnings Overview</h6>
+                                    <div class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                            <i class="fas fa-ellipsis-v fa-sm"></i>
+                                        </a>
+                                        <div class="dropdown-menu shadow">
+                                            <div class="dropdown-header" class="dropdown-item">Quick Action</div>
+                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="javascript:void(0);" class="dropdown-item">View Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="curve_chart" style="width:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Reginnal Team</h5>
+                                    <div class="d-flex align-items-center border-bottom py-2">
+                                        <img src="./assets/img/users/user1.jpg" class="rounded-circle" width="40" height="40" alt="user1"/>
+                                        <div>
+                                            <h6 class="mb-1 ms-1">Ms. July</h6>
+                                            <small class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i>Mandalay City, Myanmar.</small>
+                                        </div>
+
+                                        <div class="badge bg-success p-1 ms-auto">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-bottom py-2">
+                                        <img src="./assets/img/users/user2.jpg" class="rounded-circle" width="40" height="40" alt="user2"/>
+                                        <div>
+                                            <h6 class="mb-1 ms-1">Mr. Anton</h6>
+                                            <small class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i>Yangon City, Myanmar.</small>
+                                        </div>
+
+                                        <div class="badge bg-success p-1 ms-auto">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="d-flex align-items-center border-bottom py-2">
+                                        <img src="./assets/img/users/user3.jpg" class="rounded-circle" width="40" height="40" alt="user3"/>
+                                        <div>
+                                            <h6 class="mb-1 ms-1">Ms. Yoon</h6>
+                                            <small class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i>Bago City, Myanmar.</small>
+                                        </div>
+
+                                        <div class="badge bg-success p-1 ms-auto">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Earning Area -->
                 </div>
             </div>
         </div>
     </section>
-    <!--End Right Navbar-->
-
-    <!--Start Content Area-->
-
     <!--End Content Area-->
 
     <!--Start Footer Section-->
@@ -327,8 +515,13 @@
 
         <!--jquery js 1-->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" type="text/javascript"></script>
-
+        <!-- chart js 1 -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- google chart js1 -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <!--custom js-->
         <script src="./js/app.js" type="text/javascript"></script>
     </body>
 </html>
+
+<!-- 12GT -->
